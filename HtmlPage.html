@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="twitch-icon.ico" type="image/icon">
+    <title>
+        Twitch TV
+    </title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+</head>
+<body>
+
+    <div id="searchHeader">
+        <div class="topcorner">
+            <a href="https://www.twitch.tv/login">
+                Log In
+            </a>
+        </div>
+
+        <img src="twitch-logo.png" id="twitchLogo" style="float: left;" onclick="window.location.href = 'http://localhost:61372/HtmlPage.html'">
+        <div id="video">
+            <iframe width="400" height="315" src="http://player.twitch.tv/?channel=alaskansavage" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <input type="text" id="textQuery" placeholder="Search here"
+               onkeydown="if (event.keyCode == 13) document.getElementById('searchQuery').click()">
+        <button id="searchQuery">
+            Search
+        </button>
+
+        <button id="browseTwitch" onClick="window.location = 'http://www.twitch.tv/directory';">
+            Browse
+        </button>
+
+    </div>
+    <div id="streamDisplayList">
+        <span id="total">
+            Total Results:
+            <span id="streamCount">0 </span>
+        </span>
+
+        <span id="pageSwitch">
+            <button class="arrow" id="prevPage" disabled>&laquo;</button>
+            <span id="currentPage">1</span>/<span id="pageLimit">1</span>
+            <button class="arrow" id="nextPage" disabled>&raquo;</button><br>
+        </span>
+
+        <table id="listBody"></table>
+    </div>
+    <footer>
+        <h3>
+            Follow the latest Twitch news
+        </h3>
+        <img src="facebook-logo.gif" id="facebookLogo" onclick="window.location.href = 'http://www.facebook.com/twitch'">
+        <img src="twitter-logo.jpg" id="twitterLogo" onclick="window.location.href = 'http://www.twitter.com/twitch'">
+        ©
+        2016
+        Twitch Interactive, Inc.
+    </footer>
+    <script src="Methods.js"></script>
+    <script src="Main.js"></script>
+    <script src="Append.js"></script>
+</body>
+</html>

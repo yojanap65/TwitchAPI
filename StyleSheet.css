@@ -1,0 +1,167 @@
+﻿body {
+}
+
+.topcorner {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
+    background: #EED2EE;
+}
+
+#twitchLogo {
+    position: absolute;
+    top: 20px;
+    margin-left: 20px;
+    height: 200px;
+    width: 250px;
+    cursor: pointer;
+}
+
+#facebookLogo {
+    height: 60px;
+    width: 80px;
+    cursor: pointer;
+}
+
+#twitterLogo {
+    height: 50px;
+    width: 85px;
+    cursor: pointer;
+}
+
+/*Search button*/
+#searchQuery {
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#video {
+    margin-left: 400px;
+}
+
+#browseTwitch {
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    #browseTwitch:hover {
+        text-decoration: none;
+        background: #6441A5;
+        background: -webkit-gradient(linear, left top, left bottom, from(#6441A5), to(#6441A5));
+        background: -moz-linear-gradient(top, #6441A5, #6441A5);
+    }
+
+/*Window box*/
+#searchHeader {
+    border: solid #6441A5 3px;
+    border-bottom: 0;
+}
+
+/*Search text box*/
+#textQuery {
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: x-large;
+    float: left;
+    width: 500px;
+    background: #EED2EE;
+}
+
+/*Search button*/
+#searchQuery:hover {
+    text-decoration: none;
+    background: #6441A5;
+    background: -webkit-gradient(linear, left top, left bottom, from(#6441A5), to(#6441A5));
+    background: -moz-linear-gradient(top, #6441A5, #6441A5);
+}
+
+#searchQuery {
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+#total {
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: x-large;
+}
+
+#currentPage {
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: large;
+}
+
+#pageLimit {
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: large;
+}
+
+/*Next and prev page arrows*/
+.arrow:hover {
+    background: #68228B;
+    background: -webkit-gradient(linear, left top, left bottom, from(#6441A5), to(#72587F));
+    background: -moz-linear-gradient(top, #6441A5, #72587F);
+    cursor: pointer;
+}
+
+/*Search results*/
+#streamDisplayList {
+    border: solid #68228B 3px;
+}
+
+#pageSwitch {
+    float: right;
+    font-size: x-large;
+}
+
+.streamBlocks {
+    width: 100%;
+    height: 5%;
+    display: table;
+    table-layout: fixed;
+}
+
+    .streamBlocks:hover {
+        background-color: #FFE1FF;
+    }
+
+.streamName {
+    color: #6441A5;
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+.gameName, .numberViewers {
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+.description {
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+#listBody {
+    width: 100%;
+}
+
+.streamBlocks tr {
+    width: 100%;
+}
+
+.tableImage {
+    width: 20%;
+    height: 5%;
+}
+
+    .tableImage:hover {
+        cursor: pointer;
+    }
+
+.streamBlocks img {
+    width: 65%;
+    height: 60%;
+    float: left;
+}
